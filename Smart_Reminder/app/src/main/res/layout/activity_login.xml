@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hi.reminder.Login"
+    android:background="#DADADA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:alpha="0"
+        android:background="#FAFAFA"
+        android:id="@+id/container"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_gravity="center_horizontal"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="296dp"
+            android:layout_height="43dp"
+            android:text="Sign into your account please"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="User Name"
+            android:inputType="textPersonName"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Enter Your Password"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:onClick="btnlogin"
+            android:text="Sign In" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other Sign Option"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

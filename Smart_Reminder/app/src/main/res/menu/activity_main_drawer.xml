@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/all"
+            android:icon="@drawable/books"
+            android:title="All" />
+        <item
+            android:id="@+id/anniversary"
+            android:icon="@drawable/ann2"
+            android:title="Anniversary" />
+        <item
+            android:id="@+id/birthday"
+            android:icon="@drawable/birth"
+            android:title="Birthday" />
+        <item
+            android:id="@+id/meeting"
+            android:icon="@drawable/meet"
+            android:title="Meeting" />
+
+    </group>
+
+    <item android:title="Personal">
+        <menu>
+            <item
+                android:id="@+id/call"
+                android:icon="@drawable/call"
+                android:title="Call" />
+            <item
+                android:id="@+id/alarm"
+                android:icon="@drawable/alarm"
+                android:title="Alarm" />
+        </menu>
+    </item>
+
+</menu>

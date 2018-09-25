@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   tools:context="com.example.hi.reminder.Ringing">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Ringing Behaviour"
+        android:id="@+id/tv"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="#000005"
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgb"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ringing only"
+                android:id="@+id/ring"
+                />
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vibrate only"
+                android:layout_marginTop="15dp"
+                android:id="@+id/vib"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="both vibrate and ringing"
+                android:layout_marginTop="15dp"
+                android:id="@+id/both"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save changes"
+            android:onClick="savebeh"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Default Behaviour:- Ringing"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+</RelativeLayout>
